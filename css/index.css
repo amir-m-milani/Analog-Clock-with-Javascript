@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span,
+.clock div {
+    position: absolute;
+}
+
+.clock span:nth-of-type(12) {
+    top: 0;
+}
+
+.clock span:nth-of-type(11) {
+    top: 13.4px;
+    left: 50px;
+}
+
+.clock span:nth-of-type(10) {
+    top: 50px;
+    left: 13.4px;
+}
+
+.clock span:nth-of-type(9) {
+    left: 0;
+}
+
+.clock span:nth-of-type(8) {
+    left: 13.4px;
+    bottom: 50px;
+}
+
+.clock span:nth-of-type(7) {
+    left: 50px;
+    bottom: 13.4px;
+}
+
+.clock span:nth-of-type(6) {
+    bottom: 0;
+}
+
+.clock span:nth-of-type(5) {
+    right: 50px;
+    bottom: 13.4px;
+}
+
+.clock span:nth-of-type(4) {
+    bottom: 50px;
+    right: 13.4px;
+}
+
+.clock span:nth-of-type(3) {
+    right: 0;
+}
+
+.clock span:nth-of-type(2) {
+    top: 50px;
+    right: 13.4px;
+}
+
+.clock span:nth-of-type(1) {
+    top: 13.4px;
+    right: 50px;
+}
+
+
+.clock div {
+    transform-origin: left center;
+}
+
+.second {
+    width: 90px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-color: red;
+    z-index: 99;
+    right: 10px;
+}
+
+.minute,
+.hour {
+    /* display: none; */
+}
+
+.minute {
+    width: 85px;
+    height: 2px;
+    background-color: black;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    right: 15px;
+    /* transform: rotate(370deg); */
+}
+
+.hour {
+    width: 45px;
+    height: 2px;
+    background-color: black;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    right: 55px;
+    /* transform: rotate(-60deg); */
+}
